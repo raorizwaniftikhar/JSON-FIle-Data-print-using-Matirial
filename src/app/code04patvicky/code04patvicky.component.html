@@ -1,0 +1,25 @@
+<h3>List of retail items</h3>
+<!-- show the list of retail items
+{
+  "inventoryID": "154811",
+  "description": "Turned wood; painted.  Shape and design to simulate berry or fruit",
+  "materialUsed": "Wood",
+  "pieceName": "Spinner",
+  "listPrice": "$12.99"
+}, -->
+<!-- <pre> -->
+<!-- {{inventory | json}} -->
+<!-- </pre> -->
+
+<p *ngFor="let item of items">
+  <strong>{{item.inventoryID}}</strong>
+  <br>
+  {{item.description}}
+  <br>
+  {{item.materialUsed}}
+  <br>
+  {{item.pieceName}}
+  <br>
+  {{item.listPrice}}
+  <br>
+</p>

@@ -1,0 +1,12 @@
+<ng-container *ngIf="123 >= randomId ; else elseCase">
+  <h3 style="background-color: black; color: white;">
+    {{profile.First991622002 | uppercase}} {{profile.Last991622002 | uppercase}}
+  </h3>
+</ng-container>
+<ng-template #elseCase>
+  <h5 style="background-color: red; color: white;">
+    {{profile.First991622002 | uppercase}} {{profile.Last991622002 | uppercase}}
+  </h5>
+</ng-template>
+
+<input type="number" [(ngModel)]="randomId">

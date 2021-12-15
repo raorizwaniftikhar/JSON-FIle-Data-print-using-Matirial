@@ -1,0 +1,41 @@
+<h3 style="text-align: center;">SYST24444 Final Exam / Tuesday 9-12 / Fall 2021</h3>
+
+
+
+
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+  <!-- Tab for code01 component -->
+  <mat-tab label="code01 / setting up">
+    Setting up gathering of data for sharing
+    <h3>PROFILE</h3>
+    <pre>
+      {{profile | json}}
+      see the console  all data is logged to the console
+    </pre>
+  </mat-tab>
+
+
+
+  <!-- Tab for code01 component -->
+  <mat-tab label="code01 / patvicky">
+    <app-code01patvicky [profile]="profile"></app-code01patvicky>
+  </mat-tab>
+
+  <!-- Tab for code02 component -->
+  <mat-tab label="code02 / patvicky">
+    <app-code02patvicky [profile]="profile"></app-code02patvicky>
+  </mat-tab>
+
+  <!-- Tab for code03 component -->
+  <mat-tab label="code03 / patvicky">
+    <app-code03patvicky [company]="company"></app-code03patvicky>
+
+  </mat-tab>
+
+  <!-- Tab for code04 component -->
+  <mat-tab label="code04 / patvicky">
+    <app-code04patvicky [items]="items"></app-code04patvicky>
+
+  </mat-tab>
+</mat-tab-group>
